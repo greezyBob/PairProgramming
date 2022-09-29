@@ -1,10 +1,64 @@
-﻿namespace MoneyDispenserApp
+﻿namespace MoneyDispenserApp;
+
+internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        Money(5.09);
     }
-}
+
+    public static string Money(double input)
+    {
+        int c2Pound = 0;
+        int c1Pound = 0;
+        int c20P = 0;
+        int c5P = 0;
+        int c2P = 0;
+        int c1P = 0;
+        while (input > 0)
+        {
+            if (input > 2)
+            {
+                c2Pound++;
+                input -= 2;
+             
+            }
+            else if (input > 1)
+            {
+                c1Pound++;
+                input -= 1;
+
+            }
+            else if (input > 0.2)
+            {
+                c20P++;
+                input -= 0.2;
+             
+            }
+            else if (input > 0.05)
+            {
+                c5P++;
+                input -= 0.05;
+              
+
+            }
+            else if (input > 0.02)
+            {
+                Console.WriteLine(Math.Round(input, 2)); 
+                c2P++;
+                input -= 0.02;
+                Console.WriteLine(input);
+                
+            }
+            else
+            {
+                Console.WriteLine(Math.Round(input,2));
+                c1P++;
+                input = 0;
+            }
+        }
+        Console.WriteLine($"£2: {c2Pound}, £1: {c1Pound}, 20p:{c20P}, 5p:{c5P}, 2p:{c2P}, 1p:{c1P}");
+        return $"£2: {c2Pound}, £1: {c1Pound}, 20p:{c20P}, 5p:{c5P}, 2p:{c2P}, 1p:{c1P}";
+      }
+   }
+    
