@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyDispenserApp", "MoneyDispenserApp\MoneyDispenserApp.csproj", "{FD9DC031-7CF5-4246-93FF-C51C3B7A5B31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyDispenserApp", "MoneyDispenserApp\MoneyDispenserApp.csproj", "{FD9DC031-7CF5-4246-93FF-C51C3B7A5B31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumeralsTests2", "RomanNumeralsTests2\RomanNumeralsTests2.csproj", "{95C41503-F1A4-4FFB-A371-3B0973A59E15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FD9DC031-7CF5-4246-93FF-C51C3B7A5B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD9DC031-7CF5-4246-93FF-C51C3B7A5B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD9DC031-7CF5-4246-93FF-C51C3B7A5B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C41503-F1A4-4FFB-A371-3B0973A59E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C41503-F1A4-4FFB-A371-3B0973A59E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C41503-F1A4-4FFB-A371-3B0973A59E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C41503-F1A4-4FFB-A371-3B0973A59E15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
